@@ -74,7 +74,6 @@ if (!isset($_SESSION["login"])) {
                                 <td>
                                     <a style="background-color:#fff" href="index.php" class="btn btn-md buton">KEMBALI</a>
                                 </td>
-
                             </tr>
                         </table>
                     <?php
