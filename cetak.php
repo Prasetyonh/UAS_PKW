@@ -49,7 +49,7 @@ while ($data = mysqli_fetch_assoc($query)) {
                             </div>
                             <div class="form-group">
                                 <label for="username" class="txt text-info">NO. TELEPON</label><br>
-                                <p class="form-control"> <?php echo $data['nama'] ?> </p>
+                                <p class="form-control"> <?php echo $data['no_telp'] ?> </p>
                             </div>
                             <div class="form-group">
                                 <label for="username" class="txt text-info">TAHUN MASUK</label><br>
