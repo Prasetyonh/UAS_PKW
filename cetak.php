@@ -53,7 +53,7 @@ while ($data = mysqli_fetch_assoc($query)) {
                             </div>
                             <div class="form-group">
                                 <label for="username" class="txt text-info">TAHUN MASUK</label><br>
-                                <p class="form-control"> <?php echo $data['tahun_masuk'] ?> </p>
+                                <p class="form-control"><?php echo date('d M Y', strtotime($data['tahun_masuk'])) ?> </p>
                             </div>
                             <div class="form-group">
                                 <label class="text-info">MASA KERJA</label><br>
