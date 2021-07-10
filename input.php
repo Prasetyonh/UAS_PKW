@@ -14,6 +14,7 @@ if (!isset($_SESSION["login"])) {
 <head>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="css/style_data.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
     <!------ Include the above in your HEAD tag ---------->
     <title></title>
 </head>

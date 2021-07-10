@@ -110,9 +110,6 @@
     </script>
 
 
-    <footer class="footer text-center bg-dark">
-        <p style="margin-bottom:-2px;">20190140089 – PRASETYO NUR HIDAYAT. All Right Reserved</p>
-    </footer>
 </body>
 
 </html>
