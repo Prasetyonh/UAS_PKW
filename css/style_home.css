@@ -1,0 +1,38 @@
+body {
+  background: url(../img/bgbgbg.jpg);
+  background-size: auto;
+  background-position: center;
+  background-repeat: repeat-y;
+  z-index: 1;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  height: 50px;
+  line-height: 50px;
+  background: #3c3a3a;
+  color: #fff;
+  padding-left: 10px;
+  z-index: 2;
+}
+@media only screen and (max-width: 600px) {
+  .res {
+    display: none;
+  }
+
+  body {
+    background: url(../img/bg1mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .footer {
+    font-size: small;
+  }
+  .container {
+    height: 100%;
+  }
+}
