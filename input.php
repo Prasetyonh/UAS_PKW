@@ -43,7 +43,7 @@ if (!isset($_SESSION["login"])) {
                     </div>
                     <div class="form-group">
                         <label class="text-info">TAHUN MASUK</label><br>
-                        <input type="date" name="tahun_masuk" class="form-control">
+                        <input type="date" name="tahun_masuk" class="form-control" value="<?php echo $data['tahun_masuk']; ?>">
                     </div>
                     <div class="form-group">
                         <button type="submit" name="simpan" class="btn btn-info btn-md" value="SIMPAN">SIMPAN</button>
