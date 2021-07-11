@@ -69,7 +69,7 @@ if (!isset($_SESSION["login"])) {
                         <table>
                             <tr>
                                 <td>
-                                    <a href="cetak.php?id=<?php echo $data['id']; ?>""  class=" btn btn-info btn-md">CETAK</a>
+                                    <a href="cetak.php?id=<?php echo $data['id']; ?>" class=" btn btn-info btn-md">CETAK</a>
                                 </td>
                                 <td>
                                     <a style="background-color:#fff" href="index.php" class="btn btn-md buton">KEMBALI</a>
