@@ -3,7 +3,25 @@ session_start();
 if (isset($_SESSION["login"])) {
     header("Location:index.php");
 }
-include "koneksi.php"
+include "koneksi.php";
+if (isset($_POST['flogin'])) {
+    $username = $_POST['fusername'];
+    $password = $_POST['fpassword'];
+    $query = mysqli_query($conn, "SELECT * FROM user WHERE username = '$username' AND password = ('$password')");
+
+    $cek = mysqli_num_rows($query);
+    if ($cek == 1) {
+        $_SESSION["login"] = true;
+
+        header("location:index.php");
+        exit;
+    } else {
+        echo '<script type="text/javascript">
+                                alert("username / password SALAH");
+                              </script>';
+    }
+}
+
 
 ?>
 <!DOCTYPE html>
@@ -50,27 +68,7 @@ include "koneksi.php"
                     </form>
 
                     <div>
-                        <?php
-                        if (isset($_POST['flogin'])) {
-                            $username = $_POST['fusername'];
-                            $password = $_POST['fpassword'];
-                            $query = mysqli_query($conn, "SELECT * FROM user WHERE username = '$username' AND password = ('$password')");
 
-                            $cek = mysqli_num_rows($query);
-                            if ($cek == 1) {
-                                $_SESSION['userweb'] = $username;
-                                $_SESSION["login"] = true;
-
-                                header("location:index.php");
-                                exit;
-                            } else {
-                                echo '<script type="text/javascript">
-                                alert("username / password SALAH");
-                              </script>';
-                            }
-                        }
-
-                        ?>
                     </div>
                 </div>
             </div>
